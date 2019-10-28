@@ -9,10 +9,11 @@
 import React from 'react';
 import {
   SafeAreaView,
-  StyleSheet,
+  StyleSheet,//样式相关的组件，专门用来创建样式的
   ScrollView,
-  View,
-  Text,
+  View,//用来布局，类似div
+  Text,//文本节点，所有文本必须放到这个里面
+  TextInput,//文本框组件
   StatusBar,
 } from 'react-native';
 
@@ -27,7 +28,14 @@ import {
 const App: () => React$Node = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
+    <View>
+      <Text>
+        sdkfklasjdklfjklj
+      </Text>
+      <TextInput>
+      </TextInput>
+    </View>
+      {/* <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
@@ -63,11 +71,11 @@ const App: () => React$Node = () => {
               <Text style={styles.sectionDescription}>
                 Read the docs to discover what to do next:
               </Text>
-            </View>
+            </View> 
             <LearnMoreLinks />
           </View>
         </ScrollView>
-      </SafeAreaView>
+      </SafeAreaView> */}
     </>
   );
 };
