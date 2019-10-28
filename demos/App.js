@@ -35,12 +35,12 @@ const App: () => React$Node = () => {
       </Text>
       {/* 网上图片 */}
       <Image 
-         style = {{width: 66,height: 50}}
+         style = {{width: 100,height: 100}}
          source= {{uri:'https://avatars1.githubusercontent.com/u/24784550?s=460&v=4'}}
       />
-      {/* 本地图片 */}
+      {/* 项目图片 */}
       <Image 
-        style = {{width: 66,height: 50}}
+        style = {{width: 100,height: 100}}
         source= {require('./src/public/Iamge/10.jpg')}
       />
       <TextInput style={{height:40,borderColor:'gray',borderWidth:1}} keyboardType='numeric' secureTextEntry={true} >
