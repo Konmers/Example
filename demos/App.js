@@ -11,6 +11,7 @@ import {
   SafeAreaView,
   StyleSheet,//样式相关的组件，专门用来创建样式的
   ScrollView,
+  Image,//图片
   View,//用来布局，类似div
   Text,//文本节点，所有文本必须放到这个里面
   TextInput,//文本框组件
@@ -32,7 +33,15 @@ const App: () => React$Node = () => {
       <Text>
         sdkfklasjdklfjklj
       </Text>
-      <TextInput>
+      <Image 
+         style = {{width: 66,height: 50}}
+         source= {{uri:'https://avatars1.githubusercontent.com/u/24784550?s=460&v=4'}}
+      />
+      <Image 
+        style = {{width: 66,height: 50}}
+        source= {{require('./')}}
+      />
+      <TextInput style={{height:40,borderColor:'gray',borderWidth:1}} keyboardType='numeric' secureTextEntry={true} >
       </TextInput>
     </View>
       {/* <StatusBar barStyle="dark-content" />
