@@ -15,6 +15,8 @@ import {
   View,//用来布局，类似div
   Text,//文本节点，所有文本必须放到这个里面
   TextInput,//文本框组件
+  Button,//按钮
+  ActivityIndicator,//loading 加载动画转圈
   StatusBar,
 } from 'react-native';
 
@@ -30,22 +32,32 @@ const App: () => React$Node = () => {
   return (
     <>
     <View>
-      <Text>
-        sdkfklasjdklfjklj
+      <ActivityIndicator style={{margin:20}}></ActivityIndicator>
+      <Text style={{fontSize:20,textAlign:"center"}}>
+        贼 nice 了
       </Text>
-      {/* 网上图片 */}
+      {/* 网上图片  必须给宽高*/}
       <Image 
          style = {{width: 100,height: 100}}
          source= {{uri:'https://avatars1.githubusercontent.com/u/24784550?s=460&v=4'}}
       />
-      {/* 项目图片 */}
+      {/* 项目图片   不必须给宽高*/}
       <Image 
         style = {{width: 100,height: 100}}
         source= {require('./src/public/Iamge/10.jpg')}
       />
-      <TextInput style={{height:40,borderColor:'gray',borderWidth:1}} keyboardType='numeric' secureTextEntry={true} >
+      <TextInput style={{height:40,margin:10,borderColor:'gray',borderWidth:1}} keyboardType='numeric' secureTextEntry={true} >
       </TextInput>
+      <Button
+      onPress={()=>{
+        console.warn('hhhhh')
+      }}
+        title="点一哈"
+        color="#841584"
+        accessibilityLabel="Learn more about this purple button"
+      />
     </View>
+    
       {/* <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
