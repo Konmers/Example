@@ -23,10 +23,11 @@ import {
 import TabNavigator from 'react-native-tab-navigator';
 
 //页面引用
-import Home from './src/screens/home.js';
-import Personal from './src/screens/personal.js';
-import Leaderboard from './src/screens/leaderboard.js';
-import Shop from './src/screens/shop.js';
+import Home from './src/screens/home.js'; //首页
+import Shop from './src/screens/demo.js';//商城
+// import Shop from './src/screens/shop.js';//商城
+import Leaderboard from './src/screens/leaderboard.js';//排行榜
+import Personal from './src/screens/personal.js';//个人中心
  
 export default class App extends Component {
   constructor(props) {
