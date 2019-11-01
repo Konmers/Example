@@ -1,23 +1,33 @@
-import React, { Component } from 'react'
-import { AppRegistry, StyleSheet,  Image, Text, View,  Dimensions } from 'react-native'
 
+import React, { Component } from 'react'
+import {
+  Text,
+  View,
+  Image,
+  StyleSheet,
+  Dimensions,
+  ScrollView,//页面滚动组件 （默认 一个页面长度大于手机的长度，使用这个组件）
+} from 'react-native'
 import Swiper from 'react-native-swiper'
-const { width } = Dimensions.get('window')
+const { width,height } = Dimensions.get('window')
 
 const styles = StyleSheet.create({
-    viewPager: {
-        flex: 1,
-      },
+     viewPager:{
+       flex:1,
+       height:height*0.5
+     },
       wrapper: {
       },
       slide: {
         flex: 1,
         justifyContent: 'center',
-        backgroundColor: 'transparent'
+        backgroundColor: 'transparent',
+        color:'red',
       },
       text: {
-        color: '#fff',
-        fontSize: 30,
+        color: 'red',
+        fontSize: 20,
+        marginLeft:10,
         fontWeight: 'bold'
       },
       image: {
@@ -26,14 +36,15 @@ const styles = StyleSheet.create({
       },
       paginationStyle: {
         position: 'absolute',
-        bottom: 10,
+        bottom: -2,
         right: 10
       },
       paginationText: {
-        color: 'white',
+        color: '#23A8F2',
         fontSize: 20
       }
-  })
+})
+
   const renderPagination = (index, total, context) => {
     return (
       <View style={styles.paginationStyle}>
@@ -51,29 +62,59 @@ class Home extends Component {
     }
     render() { 
         return ( 
-            <View style={styles.viewPager}>
-                <Text>Home --- 首页</Text>
-                <View style={styles.viewPager}>
-                <Swiper
-                  style={styles.wrapper}
-                  renderPagination={renderPagination}
-                  loop={false}
-                >
-                    <View style={styles.slide} title={<Text numberOfLines={1}>Aussie tourist dies at Bali hotel</Text>}>
-                      <Image style={styles.image} source={require('../public/Iamge/10.jpg')} />
-                    </View>
-                    <View style={styles.slide} title={<Text numberOfLines={1}>Big lie behind Nine’s new show</Text>}>
-                      <Image style={styles.image} source={require('../public/Iamge/9.jpg')} />
-                    </View>
-                    <View style={styles.slide} title={<Text numberOfLines={1}>Why Stone split from Garfield</Text>}>
-                      <Image style={styles.image} source={require('../public/Iamge/7.jpg')} />
-                    </View>
-                    <View style={styles.slide} title={<Text numberOfLines={1}>Learn from Kim K to land that job</Text>}>
-                      <Image style={styles.image} source={require('../public/Iamge/4.jpg')} />
-                    </View>
-                </Swiper>
-                </View>
-            </View>
+                <ScrollView style={{width:'100%',marginBottom:20}}>
+                  <Text>Home --- 首页</Text>
+                  <View style={styles.viewPager}>
+                    <Swiper
+                      style={styles.wrapper}
+                      renderPagination={renderPagination}
+                      loop={false}
+                    >
+                        <View style={styles.slide} >
+                          <Image style={styles.image} source={require('../public/Iamge/Banner/10.jpg')} />
+                          <Text style={styles.text} numberOfLines={1} ellipsizeMode='tail'>Aussie tourist dies at Bali hotel</Text>
+                        </View>
+                        <View style={styles.slide}>
+                          <Image style={styles.image} source={require('../public/Iamge/Banner/7.jpg')} />
+                          <Text style={styles.text} numberOfLines={1}>Big lie behind Nine’s new show</Text>
+                        </View>
+                        <View style={styles.slide}>
+                          <Image style={styles.image} source={require('../public/Iamge/Banner/9.jpg')} />
+                          <Text style={styles.text} numberOfLines={1}>Why Stone split from Garfield</Text>
+                        </View>
+                        <View style={styles.slide}>
+                          <Image style={styles.image} source={require('../public/Iamge/Banner/1.jpg')} />
+                          <Text style={styles.text} numberOfLines={1}>Learn from Kim K to land that job</Text>
+                        </View>
+                    </Swiper>
+                  </View>
+                  <View>
+                      <View>
+                         <Image source={require('../public/Iamge/scratchableLatex/a.png')}/>
+                         <Text>商家电话</Text>
+                      </View>
+                      <View>
+                         <Image source={require('../public/Iamge/scratchableLatex/a.png')}/>
+                         <Text>商家电话</Text>
+                      </View>
+                      <View>
+                         <Image source={require('../public/Iamge/scratchableLatex/a.png')}/>
+                         <Text>商家电话</Text>
+                      </View>
+                      <View>
+                         <Image source={require('../public/Iamge/scratchableLatex/a.png')}/>
+                         <Text>商家电话</Text>
+                      </View>
+                      <View>
+                         <Image source={require('../public/Iamge/scratchableLatex/a.png')}/>
+                         <Text>商家电话</Text>
+                      </View>
+                      <View>
+                         <Image source={require('../public/Iamge/scratchableLatex/a.png')}/>
+                         <Text>商家电话</Text>
+                      </View>
+                  </View>
+                </ScrollView>
          );
     }
 } 

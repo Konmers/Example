@@ -56,22 +56,22 @@ const App: () => React$Node = () => {
           {/* 项目图片   不必须给宽高*/}
           <Image 
             style = {{width: 100,height: 100}}
-            source= {require('../public/Iamge/10.jpg')}
+            source= {require('../public/Iamge/Banner/10.jpg')}
           />
           <Image 
             style = {{width: 100,height: 100}}
-            source= {require('../public/Iamge/8.jpg')}
+            source= {require('../public/Iamge/Banner/8.jpg')}
           />
           <Image 
             style = {{width: 100,height: 100}}
-            source= {require('../public/Iamge/7.jpg')}
+            source= {require('../public/Iamge/Banner/7.jpg')}
           />
           <Image 
             style = {{width: 100,height: 100}}
-            source= {require('../public/Iamge/6.jpg')}
+            source= {require('../public/Iamge/Banner/6.jpg')}
           />
           <Video
-            source = {require('../public/Iamge/test2.mp4')}
+            source = {require('../public/video/test2.mp4')}
             // ref={(ref) => {
             //   this.player = ref
             // }}                             // Store reference
