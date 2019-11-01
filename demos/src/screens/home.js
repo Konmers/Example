@@ -88,29 +88,29 @@ class Home extends Component {
                         </View>
                     </Swiper>
                   </View>
-                  <View>
+                  <View style={{height:500}}>
                       <View>
-                         <Image source={require('../public/Iamge/scratchableLatex/a.png')}/>
+                         <Image style={{width:60,height:60}} source={require('../public/Iamge/Expression/a.png')}/>
                          <Text>商家电话</Text>
                       </View>
                       <View>
-                         <Image source={require('../public/Iamge/scratchableLatex/a.png')}/>
+                         <Image source={require('../public/Iamge/Expression/a.png')}/>
                          <Text>商家电话</Text>
                       </View>
                       <View>
-                         <Image source={require('../public/Iamge/scratchableLatex/a.png')}/>
+                         <Image source={require('../public/Iamge/Expression/ciTooth.png')}/>
                          <Text>商家电话</Text>
                       </View>
                       <View>
-                         <Image source={require('../public/Iamge/scratchableLatex/a.png')}/>
+                         <Image source={require('../public/Iamge/Expression/a.png')}/>
                          <Text>商家电话</Text>
                       </View>
                       <View>
-                         <Image source={require('../public/Iamge/scratchableLatex/a.png')}/>
+                         <Image source={require('../public/Iamge/Expression/a.png')}/>
                          <Text>商家电话</Text>
                       </View>
                       <View>
-                         <Image source={require('../public/Iamge/scratchableLatex/a.png')}/>
+                         <Image source={require('../public/Iamge/Expression/a.png')}/>
                          <Text>商家电话</Text>
                       </View>
                   </View>
