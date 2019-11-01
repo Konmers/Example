@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
     )
   }
 
+
 class Home extends Component {
     constructor(props) {
         super(props);
@@ -88,29 +89,41 @@ class Home extends Component {
                         </View>
                     </Swiper>
                   </View>
-                  <View style={{height:500}}>
-                      <View>
-                         <Image style={{width:60,height:60}} source={require('../public/Iamge/Expression/a.png')}/>
+                  <View style={{height:500,flex:1,flexDirection:'row',flexWrap:'wrap'}}>
+                      <View style={{marginLeft: 30,marginRight: 30,marginTop:10}}>
+                         <Image style={{width:60,height:60}} source={require('../public/Iamge/Expression/a.jpg')}/>
                          <Text>商家电话</Text>
                       </View>
-                      <View>
-                         <Image source={require('../public/Iamge/Expression/a.png')}/>
+                      <View style={{marginLeft: 30,marginRight: 30,marginTop:10}}>
+                         <Image style={{width:60,height:60}} source={require('../public/Iamge/Expression/cool.jpg')}/>
                          <Text>商家电话</Text>
                       </View>
-                      <View>
-                         <Image source={require('../public/Iamge/Expression/ciTooth.png')}/>
+                     <View style={{marginLeft: 30,marginRight: 30,marginTop:10}}>
+                         <Image style={{width:60,height:60}} source={require('../public/Iamge/Expression/ciTooth.jpg')}/>
                          <Text>商家电话</Text>
                       </View>
-                      <View>
-                         <Image source={require('../public/Iamge/Expression/a.png')}/>
+                      <View style={{marginLeft: 30,marginRight: 30,marginTop:10}}>
+                         <Image style={{width:60,height:60}} source={require('../public/Iamge/Expression/happy.jpg')}/>
                          <Text>商家电话</Text>
                       </View>
-                      <View>
-                         <Image source={require('../public/Iamge/Expression/a.png')}/>
+                      <View style={{marginLeft: 30,marginRight: 30,marginTop:10}}>
+                         <Image style={{width:60,height:60}} source={require('../public/Iamge/Expression/love.jpg')}/>
                          <Text>商家电话</Text>
                       </View>
-                      <View>
-                         <Image source={require('../public/Iamge/Expression/a.png')}/>
+                      <View style={{marginLeft: 30,marginRight: 30,marginTop:10}}>
+                         <Image style={{width:60,height:60}} source={require('../public/Iamge/Expression/monster.jpg')}/>
+                         <Text>商家电话</Text>
+                      </View>
+                      <View style={{marginLeft: 30,marginRight: 30,marginTop:10}}>
+                         <Image style={{width:60,height:60}} source={require('../public/Iamge/Expression/ninja.jpg')}/>
+                         <Text>商家电话</Text>
+                      </View>
+                      <View style={{marginLeft: 30,marginRight: 30,marginTop:10}}>
+                         <Image style={{width:60,height:60}} source={require('../public/Iamge/Expression/skeleton.jpg')}/>
+                         <Text>商家电话</Text>
+                      </View>
+                      <View style={{marginLeft: 30,marginRight: 30,marginTop:10}}>
+                         <Image style={{width:60,height:60}} source={require('../public/Iamge/Expression/smileCry.jpg')}/>
                          <Text>商家电话</Text>
                       </View>
                   </View>
