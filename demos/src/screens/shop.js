@@ -1,21 +1,17 @@
-//商城
-import React, { Component } from 'react';
-import {View,Text} from 'react-native';
+import React, {Component} from 'react';
+import { Text,View,Image,Button} from 'react-native';
 
-class Shop extends Component {
+export default class Shop extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
     }
-    render() { 
-        return ( 
-            <View>
-                <Text>
-                 shop --  商城
-                </Text>
-            </View>
-         );
-    }
+  
+  render() {
+    return (
+        <View>
+            <Text>鼎折覆餗进度款福晶科技</Text>
+        </View>
+    )
+  }
 }
- 
-export default Shop;

@@ -6,9 +6,16 @@ import {
   Image,
   StyleSheet,
   Dimensions,
+  TouchableHighlight,//选中跳转
   ScrollView,//页面滚动组件 （默认 一个页面长度大于手机的长度，使用这个组件）
 } from 'react-native'
+//swiper banner滚动
 import Swiper from 'react-native-swiper'
+
+// Actions表示要进行路由的JS操作了,可以跳特到新路由
+import { Actions } from 'react-native-router-flux'
+
+// Dimensions 用于获取设备宽、高、分辨率
 const { width,height } = Dimensions.get('window')
 
 const styles = StyleSheet.create({
@@ -45,16 +52,15 @@ const styles = StyleSheet.create({
       }
 })
 
-  const renderPagination = (index, total, context) => {
-    return (
-      <View style={styles.paginationStyle}>
-        <Text style={{ color: 'grey' }}>
-          <Text style={styles.paginationText}>{index + 1}</Text>/{total}
-        </Text>
-      </View>
-    )
-  }
-
+const renderPagination = (index, total, context) => {
+  return (
+    <View style={styles.paginationStyle}>
+      <Text style={{ color: 'grey' }}>
+        <Text style={styles.paginationText}>{index + 1}</Text>/{total}
+      </Text>
+    </View>
+  )
+}
 
 class Home extends Component {
     constructor(props) {
@@ -90,10 +96,12 @@ class Home extends Component {
                     </Swiper>
                   </View>
                   <View style={{height:500,flex:1,flexDirection:'row',flexWrap:'wrap'}}>
-                      <View style={{marginLeft: 30,marginRight: 30,marginTop:10}}>
-                         <Image style={{width:60,height:60}} source={require('../public/Iamge/Expression/a.jpg')}/>
-                         <Text>商家电话</Text>
-                      </View>
+                      <TouchableHighlight style={{marginLeft: 30,marginRight: 30,marginTop:10}} onPress={this.getVideoList} underlayColor={true}>
+                        <View >
+                          <Image style={{width:60,height:60}} source={require('../public/Iamge/Expression/a.jpg')}/>
+                          <Text>商家电话</Text>
+                        </View>
+                      </TouchableHighlight>
                       <View style={{marginLeft: 30,marginRight: 30,marginTop:10}}>
                          <Image style={{width:60,height:60}} source={require('../public/Iamge/Expression/cool.jpg')}/>
                          <Text>商家电话</Text>
@@ -130,7 +138,15 @@ class Home extends Component {
                 </ScrollView>
          );
     }
+
+    getVideoList = () =>{
+      // console.warn('wwwwwwwwwww')
+      // Actions.videodetail({id:10}) //传参
+      Actions.videodetail()// 空传参
+    }
+
 } 
+
 
 export default Home; 
 

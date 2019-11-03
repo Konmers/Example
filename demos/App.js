@@ -24,11 +24,13 @@ import TabNavigator from 'react-native-tab-navigator';
 
 //页面引用
 import Home from './src/screens/home.js'; //首页
-import Shop from './src/screens/demo.js';//商城
-// import Shop from './src/screens/shop.js';//商城
+// import Shop from './src/screens/demo.js';//商城
+import Shop from './src/screens/shop.js';//商城
 import Leaderboard from './src/screens/leaderboard.js';//排行榜
 import Personal from './src/screens/personal.js';//个人中心
- 
+import VideoDetail from './src/screens/videodetail.js';//视频详情
+import VideoPlayScreen from './src/screens/videoplayer.js';//视频播放
+
 export default class App extends Component {
   constructor(props) {
     super(props);
