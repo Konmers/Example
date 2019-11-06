@@ -44,6 +44,7 @@ export default class Videopalyer extends Component<Props> {
   render() {
     return (
       <View style={styles.container} onLayout={this._onLayout}>
+        <Text>{this.props.title}</Text>
         <View style={{ width: this.state.videoWidth, height: this.state.videoHeight, backgroundColor:'#000000' }}>
           <Video
             ref={(ref) => this.videoPlayer = ref}

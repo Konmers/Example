@@ -9,13 +9,13 @@ import {Router,Stack,Scene} from 'react-native-router-flux';
 
 //引用页面
 import App from './App.js'
-import HomeScreen from './src/screens/home.js'; //首页
+import HomeScreen from './src/screens/Home.js'; //首页
 // import Shop from './src/screens/demo.js';//商城
-import ShopScreen from './src/screens/shop.js';//商城
-import LeaderboardScreen from './src/screens/leaderboard.js';//排行榜
-import PersonalScreen from './src/screens/personal.js';//个人中心
-import VideoDetailScreen from './src/screens/videodetail.js';//视频详情
-import VideoPlayScreen from './src/screens/videoplayer.js';//视频播放
+import ShopScreen from './src/screens/Shop.js';//商城
+import LeaderboardScreen from './src/screens/LeaderBoard.js';//排行榜
+import PersonalScreen from './src/screens/Personal.js';//个人中心
+import VideoDetailScreen from './src/screens/VideoDetail.js';//视频详情
+import VideoPlayScreen from './src/screens/VideoPlayer.js';//视频播放
 
 export default  class Main extends Component {
     constructor(props) {

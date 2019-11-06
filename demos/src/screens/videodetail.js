@@ -20,24 +20,17 @@ class VideoDetail extends Component {
   }
   render() { 
     return ( 
-      <View style={{width:'100%',marginBottom:20}}>
-          <Text>
-              啦啦啦啦啦啦啦啦绿
-          </Text>
-          <View style={{height:500,flex:1,flexDirection:'row',flexWrap:'wrap'}}>
-            <View style={{marginLeft: 30,marginRight: 30,marginTop:10}}>
-                <Image style={{width:60,height:60}} source={require('../public/Iamge/Banner/8.jpg')}/>
-                <Button
-                  onPress={()=>{
-                    Actions.videoplay()
-                  }}
-                    title="点一哈"
-                    color="#841584"
-                    accessibilityLabel="Learn more about this purple button"
-                  />
+      <TouchableHighlight  style={{marginLeft: 30,marginRight: 30,marginTop:10}} onPress={()=>{Actions.videoplay({title:'湖广会馆恢复规划'})}}>
+        <View style={{width:'100%',marginBottom:20,flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+            <Text>
+                啦啦啦啦啦啦啦啦绿
+            </Text>
+            <View style={{alignItems:'center'}}>
+              <Image style={{width:100,height:100}} source={require('../public/Iamge/Banner/8.jpg')}/>
+              <Text>Learn more about this purple button</Text>
             </View>
-          </View>
-      </View>
+        </View>
+      </TouchableHighlight>
      );
   }
 }
