@@ -6004,10 +6004,10 @@ react-native-git-upgrade@^0.2.7:
     shelljs "^0.7.5"
     yeoman-environment "1.5.3"
 
-react-native-orientation@^3.1.3:
-  version "3.1.3"
-  resolved "https://registry.npm.taobao.org/react-native-orientation/download/react-native-orientation-3.1.3.tgz#d45803841fe94b6cce9acbe904fd5ca191a3711e"
-  integrity sha1-1FgDhB/pS2zOmsvpBP1coZGjcR4=
+react-native-orientation-locker@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.npm.taobao.org/react-native-orientation-locker/download/react-native-orientation-locker-1.1.7.tgz#f027a9ff63f7e6ad89be430cf0a5723b6434ccf7"
+  integrity sha1-8Cep/2P35q2JvkMM8KVyO2Q0zPc=
 
 react-native-reanimated@^1.3.0:
   version "1.3.0"
@@ -6137,13 +6137,6 @@ react-navigation-stack@0.7.0:
   version "0.7.0"
   resolved "https://registry.npm.taobao.org/react-navigation-stack/download/react-navigation-stack-0.7.0.tgz#0b2f139ee1cba953037ef51353df992ec6c74fa2"
   integrity sha1-Cy8TnuHLqVMDfvUTU9+ZLsbHT6I=
-
-react-navigation-stack@^1.10.3:
-  version "1.10.3"
-  resolved "https://registry.npm.taobao.org/react-navigation-stack/download/react-navigation-stack-1.10.3.tgz#e714e442b20427f0d2d3c18fce1f9e8cfe69be0b"
-  integrity sha1-5xTkQrIEJ/DS08GPzh+ejP5pvgs=
-  dependencies:
-    prop-types "^15.7.2"
 
 react-navigation-tabs@0.8.4:
   version "0.8.4"
